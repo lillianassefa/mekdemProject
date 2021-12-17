@@ -1,3 +1,4 @@
+
 const express = require('express');
 const mysql = require('mysql2');
 const jwt = require('jsonwebtoken');
@@ -80,7 +81,7 @@ app.get('/council' , authentication.isStudentLoggedIn ,(req , res)=> {
         }
      });
 });
-
+// lillian alehegn    ATR/4546/11
 //clearance 
 app.get('/clearance',authentication.isStudentLoggedIn,(req,res)=>{
      res.render('clearance.ejs',{error: false});
